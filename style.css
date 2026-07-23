@@ -64,6 +64,13 @@ header.site-header p.tagline {
   font-size: 1.05rem;
 }
 
+header.site-header p.handle {
+  margin: 4px 0 0;
+  color: #9fb0dd;
+  font-size: 0.9rem;
+  font-family: "Consolas", "SFMono-Regular", Menlo, monospace;
+}
+
 nav.site-nav {
   margin-top: 24px;
 }
