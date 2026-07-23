@@ -104,13 +104,54 @@
       <div class="body">
         <span class="platform">Web App &middot; Self-Hosted &middot; Self-Initiated</span>
         <h3>TAWAS Water Billing System</h3>
-        <p class="desc">Designed, built, and deployed independently for the LGU of Tampilisan's water district — outside my formal job description, with no dedicated IT department to hand it off to. Full ownership end-to-end: consumer records, meter reading entry, and itemized bill computation (base charge, environmental fee, system loss), with role-based accounts for admins and encoders. Deployed and actively in use today.</p>
+        <p class="desc">Designed, built, and deployed independently for the LGU of Tampilisan's water district — outside my formal job description, with no dedicated IT department to hand it off to. Full ownership end-to-end: consumer records, meter reading entry, and itemized bill computation (base charge, environmental fee, system loss), with role-based accounts for admins and encoders. Currently billing roughly 675 consumer accounts monthly, deployed and actively in use today.</p>
         <ul class="features">
           <li>Flask + PostgreSQL, served by Waitress behind an nginx reverse proxy</li>
           <li>Runs in a dedicated LXC container on a Proxmox VE host, with a systemd service for auto-restart</li>
           <li>Sits behind an OPNsense firewall with VLAN-segmented network isolation</li>
           <li>CSV export for billing records; migration tooling from the earlier SQLite prototype</li>
         </ul>
+
+        <div class="mockup-wrap">
+          <div class="mockup-window">
+            <div class="mockup-titlebar">
+              <span class="mockup-dot red"></span>
+              <span class="mockup-dot yellow"></span>
+              <span class="mockup-dot green"></span>
+            </div>
+            <div class="mockup-body">
+              <table class="mockup-table">
+                <thead>
+                  <tr><th>Account No.</th><th>Name</th><th>Status</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>TMP-001</td><td>Dela Cruz, Juan</td><td><span class="status-pill status-active">Active</span></td></tr>
+                  <tr><td>TMP-002</td><td>Santos, Maria</td><td><span class="status-pill status-active">Active</span></td></tr>
+                  <tr><td>TMP-003</td><td>Reyes, Pedro</td><td><span class="status-pill status-disconnected">Disconnected</span></td></tr>
+                  <tr><td>TMP-004</td><td>Garcia, Ana</td><td><span class="status-pill status-active">Active</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="mockup-window">
+            <div class="mockup-titlebar">
+              <span class="mockup-dot red"></span>
+              <span class="mockup-dot yellow"></span>
+              <span class="mockup-dot green"></span>
+            </div>
+            <div class="mockup-body mock-receipt">
+              <h5>Water Bill / Statement of Account</h5>
+              <div class="mock-row"><span>Name</span><span>Dela Cruz, Juan</span></div>
+              <div class="mock-row"><span>Account No.</span><span>TMP-001</span></div>
+              <div class="mock-row"><span>Billing Month</span><span>2026-07</span></div>
+              <div class="mock-row"><span>Consumption</span><span>18.00 cu.m.</span></div>
+              <div class="amount"><span>Amount Due</span><span>&#8369;360.00</span></div>
+            </div>
+          </div>
+        </div>
+        <p class="mockup-caption">Recreated UI with placeholder data — no real consumer information is shown.</p>
+
         <ul class="tag-list">
           <li>Flask</li>
           <li>PostgreSQL</li>
