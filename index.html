@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>peepooh807 — Apps</title>
-<meta name="description" content="Offline-first apps for Filipino teachers and professionals: Grado PH (DepEd grading and class records) and GovDeduct PH (payroll deductions calculator).">
+<title>peepooh807 — Apps &amp; Projects</title>
+<meta name="description" content="Software developer building offline-first apps (Grado PH, GovDeduct PH) and deploying production systems — Flask/PostgreSQL web apps on Proxmox VE/LXC, behind OPNsense firewalls.">
 <link rel="icon" href="assets/icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -15,12 +15,14 @@
     <img class="avatar" src="assets/icon.png" alt="Grado PH icon">
     <div>
       <h1>peepooh807</h1>
-      <p class="tagline">Building practical, offline-first apps for Filipino teachers and professionals.</p>
+      <p class="tagline">Software developer — offline-first apps, and self-hosted infrastructure for local government and education.</p>
     </div>
   </div>
   <div class="wrap">
     <nav class="site-nav">
       <a href="#apps">Apps</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -93,14 +95,79 @@
     </div>
   </section>
 
+  <section id="projects">
+    <h2>Projects</h2>
+    <p class="section-lead">Beyond mobile/desktop apps, I design and run production systems end-to-end — from the application down to the network they sit on.</p>
+
+    <div class="app-card">
+      <img class="icon" src="assets/tawas-icon.svg" alt="TAWAS Water Billing System icon">
+      <div class="body">
+        <span class="platform">Web App &middot; Self-Hosted</span>
+        <h3>TAWAS Water Billing System</h3>
+        <p class="desc">A consumer billing system built for the LGU of Tampilisan's water district — consumer records, meter reading entry, and itemized bill computation (base charge, environmental fee, system loss), with role-based accounts for admins and encoders. Deployed and actively in use.</p>
+        <ul class="features">
+          <li>Flask + PostgreSQL, served by Waitress behind an nginx reverse proxy</li>
+          <li>Runs in a dedicated LXC container on a Proxmox VE host, with a systemd service for auto-restart</li>
+          <li>Sits behind an OPNsense firewall with VLAN-segmented network isolation</li>
+          <li>CSV export for billing records; migration tooling from the earlier SQLite prototype</li>
+        </ul>
+        <ul class="tag-list">
+          <li>Flask</li>
+          <li>PostgreSQL</li>
+          <li>Proxmox VE</li>
+          <li>LXC</li>
+          <li>OPNsense</li>
+          <li>nginx</li>
+        </ul>
+        <div class="btn-row">
+          <span class="btn btn-disabled">Private deployment — LGU internal network</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p class="section-lead">What I use to build and run the projects above.</p>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h4>Development</h4>
+        <ul class="tag-list">
+          <li>Python</li>
+          <li>Kotlin / Android</li>
+          <li>Flask</li>
+          <li>SQL (PostgreSQL, SQLite)</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Infrastructure &amp; Networking</h4>
+        <ul class="tag-list">
+          <li>Proxmox VE</li>
+          <li>LXC Containers</li>
+          <li>OPNsense</li>
+          <li>VLAN Segmentation</li>
+          <li>nginx</li>
+          <li>systemd</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Tools</h4>
+        <ul class="tag-list">
+          <li>Git &amp; GitHub</li>
+          <li>Linux (Debian/Ubuntu)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <section id="about">
     <h2>About</h2>
-    <p class="section-lead">I build small, focused, offline-first apps for Filipino users — classroom tools for teachers, and everyday calculators for employees. Currently: Grado PH, a grade computation and class record tool built around DepEd Order No. 015, s. 2026, and GovDeduct PH, a payroll deductions estimator for any Filipino employee.</p>
+    <p class="section-lead">I build small, focused, offline-first apps for Filipino users, and I design and deploy the production systems behind them. My work spans classroom tools for teachers (Grado PH), everyday calculators for employees (GovDeduct PH), and a self-hosted municipal billing system (TAWAS) running on my own Proxmox/OPNsense infrastructure for the LGU of Tampilisan. Open to freelance work.</p>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p class="section-lead">Questions, feedback, or bug reports are welcome at <a href="mailto:pepooh696@gmail.com">pepooh696@gmail.com</a>.</p>
+    <p class="section-lead">Questions, feedback, or freelance inquiries are welcome at <a href="mailto:pepooh696@gmail.com">pepooh696@gmail.com</a> or on <a href="https://www.linkedin.com/in/johnritz-albelda-8b64b3118/" target="_blank" rel="noopener">LinkedIn</a>.</p>
   </section>
 
 </main>

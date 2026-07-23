@@ -221,6 +221,36 @@ footer a {
   font-size: 0.9rem;
 }
 
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 18px;
+  padding: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  background: #e8edfb;
+  color: var(--navy);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 28px;
+}
+
+.skill-group h4 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  color: var(--navy);
+}
+
 @media (max-width: 600px) {
   .app-card {
     flex-direction: column;
