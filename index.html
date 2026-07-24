@@ -189,11 +189,11 @@
     </div>
 
     <div class="app-card">
-      <img class="icon" src="assets/flag-icon.svg" alt="FLAG Attendance System icon">
+      <img class="icon" src="assets/flag-icon.svg" alt="Tampilisan Attendance System icon">
       <div class="body">
         <span class="platform">Web App &middot; Self-Hosted &middot; Self-Initiated</span>
-        <h3>FLAG Attendance System</h3>
-        <p class="desc">A general-purpose QR-code employee attendance tracker built for LGU Tampilisan — designed, built, and deployed independently, outside my formal job description. Capable of daily attendance tracking; currently used for the LGU's weekly Monday flag ceremony. Employees are scanned in via a browser-based scanner (with a companion Android scanner app), with a live dashboard, attendance reports, and a full audit log of every scan. Currently tracking 123 LGU employees, deployed and actively in use today.</p>
+        <h3>Tampilisan Attendance System</h3>
+        <p class="desc">A general-purpose QR-code employee attendance tracker built for LGU Tampilisan — designed, built, and deployed independently, outside my formal job description. Capable of daily attendance tracking; currently used for the LGU's weekly Monday flag ceremony. Employees are scanned in via a browser-based scanner (with a companion Android scanner app), with a live dashboard, attendance reports, and a full audit log of every scan. Currently tracking 129 LGU employees, deployed and actively in use today.</p>
         <ul class="features">
           <li>Flask + SQLAlchemy, running as a self-managed systemd service</li>
           <li>Browser-based QR scanning (jsQR) — no native app required on the scanning device</li>
@@ -202,6 +202,47 @@
           <li>Runs in a dedicated LXC container on the same Proxmox VE host as TAWAS</li>
           <li>Full audit log of every scan (success, failed, invalid) for compliance</li>
         </ul>
+
+        <div class="mockup-wrap">
+          <div class="mockup-window">
+            <div class="mockup-titlebar">
+              <span class="mockup-dot red"></span>
+              <span class="mockup-dot yellow"></span>
+              <span class="mockup-dot green"></span>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-stats">
+                <div class="mockup-stat"><div class="num">104</div><div class="lbl">Present</div></div>
+                <div class="mockup-stat"><div class="num">25</div><div class="lbl">Absent</div></div>
+                <div class="mockup-stat"><div class="num">129</div><div class="lbl">Total</div></div>
+                <div class="mockup-stat"><div class="num">81%</div><div class="lbl">Rate</div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mockup-window">
+            <div class="mockup-titlebar">
+              <span class="mockup-dot red"></span>
+              <span class="mockup-dot yellow"></span>
+              <span class="mockup-dot green"></span>
+            </div>
+            <div class="mockup-body">
+              <table class="mockup-table">
+                <thead>
+                  <tr><th>ID</th><th>Name</th><th>Status</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>EMP001</td><td>Dela Cruz, Juan</td><td><span class="status-pill status-active">Present</span></td></tr>
+                  <tr><td>EMP002</td><td>Santos, Maria</td><td><span class="status-pill status-active">Present</span></td></tr>
+                  <tr><td>EMP003</td><td>Reyes, Pedro</td><td><span class="status-pill status-disconnected">Absent</span></td></tr>
+                  <tr><td>EMP004</td><td>Garcia, Ana</td><td><span class="status-pill status-active">Present</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <p class="mockup-caption">Recreated UI with placeholder data — no real employee information is shown.</p>
+
         <ul class="tag-list">
           <li>Flask</li>
           <li>SQLAlchemy</li>
@@ -253,7 +294,7 @@
 
   <section id="about">
     <h2>About</h2>
-    <p class="section-lead">I build small, focused, offline-first apps for Filipino users, and I design and deploy the production systems behind them. My work spans classroom tools for teachers (Grado PH, QRAfT), everyday calculators for employees (GovDeduct PH), and two self-hosted systems for the LGU of Tampilisan — TAWAS (water billing) and FLAG Attendance (employee attendance tracking) — both designed, built, and deployed independently, entirely outside my formal job description, running on my own Proxmox VE/OPNsense infrastructure. Open to freelance work.</p>
+    <p class="section-lead">I build small, focused, offline-first apps for Filipino users, and I design and deploy the production systems behind them. My work spans classroom tools for teachers (Grado PH, QRAfT), everyday calculators for employees (GovDeduct PH), and two self-hosted systems for the LGU of Tampilisan — TAWAS (water billing) and the Tampilisan Attendance System (employee attendance tracking) — both designed, built, and deployed independently, entirely outside my formal job description, running on my own Proxmox VE/OPNsense infrastructure. Open to freelance work.</p>
   </section>
 
   <section id="contact">

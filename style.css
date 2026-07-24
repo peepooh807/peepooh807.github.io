@@ -360,6 +360,35 @@ table.mockup-table td {
   color: var(--navy-dark);
 }
 
+.mockup-stats {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.mockup-stat {
+  flex: 1;
+  min-width: 68px;
+  text-align: center;
+  background: var(--bg);
+  border-radius: 8px;
+  padding: 8px 4px;
+}
+
+.mockup-stat .num {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--navy-dark);
+}
+
+.mockup-stat .lbl {
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
 .mockup-caption {
   font-size: 0.78rem;
   color: var(--text-muted);
