@@ -256,6 +256,74 @@
         </div>
       </div>
     </div>
+
+    <div class="app-card">
+      <img class="icon" src="assets/mswdo-icon.svg" alt="MSWDO ID Management System icon">
+      <div class="body">
+        <span class="platform">Web App &middot; Self-Hosted &middot; Self-Initiated &middot; In Development</span>
+        <h3>MSWDO ID Management System</h3>
+        <p class="desc">A Django system for the Municipal Social Welfare &amp; Development Office to register and issue PWD (Persons with Disability) and Senior Citizen IDs — designed and built independently, outside my formal job description. Auto-generates ID numbers, prints professional ID cards with photo and QR code, and lists the RA 10754 / RA 9994 privileges on the back. Currently in development and testing, not yet deployed with live constituent records.</p>
+        <ul class="features">
+          <li>Django + PostgreSQL, served by Gunicorn behind nginx</li>
+          <li>Auto-generated PWD/SC ID numbers, with photo and QR code on the printed card</li>
+          <li>Role-based access — Admin, Encoder, Viewer — for MSWDO staff</li>
+          <li>Dashboard with registration stats, disability-type and barangay breakdowns</li>
+          <li>CSV export for both PWD and Senior Citizen records</li>
+          <li>Runs in a dedicated LXC container on the same Proxmox VE host as TAWAS and the Attendance System</li>
+        </ul>
+
+        <div class="mockup-wrap">
+          <div class="mockup-window">
+            <div class="mockup-titlebar">
+              <span class="mockup-dot red"></span>
+              <span class="mockup-dot yellow"></span>
+              <span class="mockup-dot green"></span>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-stats">
+                <div class="mockup-stat"><div class="num">48</div><div class="lbl">Total PWD</div></div>
+                <div class="mockup-stat"><div class="num">62</div><div class="lbl">Total SC</div></div>
+                <div class="mockup-stat"><div class="num">45</div><div class="lbl">Active PWD</div></div>
+                <div class="mockup-stat"><div class="num">59</div><div class="lbl">Active SC</div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mockup-window">
+            <div class="mockup-titlebar">
+              <span class="mockup-dot red"></span>
+              <span class="mockup-dot yellow"></span>
+              <span class="mockup-dot green"></span>
+            </div>
+            <div class="mockup-body">
+              <table class="mockup-table">
+                <thead>
+                  <tr><th>ID No.</th><th>Name</th><th>Type</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>PWD-2026-00001</td><td>Dela Cruz, Juan</td><td><span class="status-pill status-active">Mobility</span></td></tr>
+                  <tr><td>SC-2026-00001</td><td>Santos, Maria</td><td><span class="status-pill status-active">Senior</span></td></tr>
+                  <tr><td>PWD-2026-00002</td><td>Reyes, Pedro</td><td><span class="status-pill status-active">Visual</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <p class="mockup-caption">Recreated UI with placeholder data — no real PWD or Senior Citizen information is shown.</p>
+
+        <ul class="tag-list">
+          <li>Django</li>
+          <li>PostgreSQL</li>
+          <li>Proxmox VE</li>
+          <li>LXC</li>
+          <li>OPNsense</li>
+          <li>nginx</li>
+        </ul>
+        <div class="btn-row">
+          <span class="btn btn-disabled">In development — not yet deployed</span>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="skills">
@@ -294,7 +362,7 @@
 
   <section id="about">
     <h2>About</h2>
-    <p class="section-lead">I build small, focused, offline-first apps for Filipino users, and I design and deploy the production systems behind them. My work spans classroom tools for teachers (Grado PH, QRAfT), everyday calculators for employees (GovDeduct PH), and two self-hosted systems for the LGU of Tampilisan — TAWAS (water billing) and the Tampilisan Attendance System (employee attendance tracking) — both designed, built, and deployed independently, entirely outside my formal job description, running on my own Proxmox VE/OPNsense infrastructure. Open to freelance work.</p>
+    <p class="section-lead">I build small, focused, offline-first apps for Filipino users, and I design and deploy the production systems behind them. My work spans classroom tools for teachers (Grado PH, QRAfT), everyday calculators for employees (GovDeduct PH), and self-hosted systems for the LGU of Tampilisan — TAWAS (water billing), the Tampilisan Attendance System (employee attendance tracking), and the MSWDO ID Management System (PWD/Senior Citizen ID issuance, in development) — all designed, built, and deployed independently, entirely outside my formal job description, running on my own Proxmox VE/OPNsense infrastructure. Open to freelance work.</p>
   </section>
 
   <section id="contact">
