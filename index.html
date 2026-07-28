@@ -337,7 +337,7 @@
       <div class="body">
         <span class="platform">Web App &middot; Self-Hosted &middot; Self-Initiated &middot; Live</span>
         <h3>GSO Fixed Asset &amp; Inventory Management System</h3>
-        <p class="desc">A property and inventory tracking system for the LGU of Tampilisan's General Services Office (GSO) — designed, built, and deployed independently, outside my formal job description. Tracks every government asset's property number, acquisition cost, assigned department and accountable person, condition, and full history through to disposal. Currently managing 885 tracked assets across departments, deployed and actively in use today.</p>
+        <p class="desc">A property and inventory tracking system for the LGU of Tampilisan's General Services Office (GSO) — designed, built, and deployed independently, outside my formal job description. Tracks every government asset's property number, acquisition cost, assigned department and accountable person, condition, and full history through to disposal. Currently managing 896 tracked assets worth roughly &#8369;172.8 million across departments, deployed and actively in use today.</p>
         <ul class="features">
           <li>Django + PostgreSQL, served by Gunicorn behind nginx</li>
           <li>Full asset lifecycle tracking — acquisition, department/accountable-person assignment, condition, and disposal, with a complete per-asset history log</li>
@@ -345,6 +345,46 @@
           <li>Bulk Excel import/export (openpyxl, pandas) for large-scale data handling</li>
           <li>Runs in a dedicated LXC container on the same Proxmox VE host as TAWAS, the Attendance System, and MSWDO</li>
         </ul>
+
+        <div class="mockup-wrap">
+          <div class="mockup-window">
+            <div class="mockup-titlebar">
+              <span class="mockup-dot red"></span>
+              <span class="mockup-dot yellow"></span>
+              <span class="mockup-dot green"></span>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-stats">
+                <div class="mockup-stat"><div class="num">896</div><div class="lbl">Total Assets</div></div>
+                <div class="mockup-stat"><div class="num">&#8369;172.8M</div><div class="lbl">Total Value</div></div>
+                <div class="mockup-stat"><div class="num">748</div><div class="lbl">&#8369;50k &amp; Below</div></div>
+                <div class="mockup-stat"><div class="num">0</div><div class="lbl">Discrepancies</div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mockup-window">
+            <div class="mockup-titlebar">
+              <span class="mockup-dot red"></span>
+              <span class="mockup-dot yellow"></span>
+              <span class="mockup-dot green"></span>
+            </div>
+            <div class="mockup-body">
+              <table class="mockup-table">
+                <thead>
+                  <tr><th>Item</th><th>Department</th><th>Value</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Printer</td><td>MPDO</td><td>&#8369;12,500</td></tr>
+                  <tr><td>Office Table</td><td>DILG Office</td><td>&#8369;4,850</td></tr>
+                  <tr><td>Projector</td><td>DILG Office</td><td>&#8369;28,000</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <p class="mockup-caption">Dashboard totals are the system's real aggregate figures; the item list uses illustrative entries.</p>
+
         <ul class="tag-list">
           <li>Django</li>
           <li>PostgreSQL</li>
