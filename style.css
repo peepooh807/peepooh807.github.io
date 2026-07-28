@@ -8,6 +8,48 @@
   --text: #1a1a2e;
   --text-muted: #5a5f73;
   --border: #e2e4ef;
+
+  /* Accent used for text/icons on light backgrounds (links, chip labels) —
+     kept separate from --navy so dark mode can brighten it for contrast
+     without touching the navy used for solid backgrounds (header, table
+     headers), which already reads fine on both. */
+  --accent: var(--navy);
+  --chip-bg: #e8edfb;
+  --avatar-bg: #fff;
+  --window-bg: #fff;
+  --titlebar-bg: #eceef5;
+  --disabled-bg: #eceef5;
+  --disabled-text: #9198b0;
+  --status-active-bg: #e3f7e8;
+  --status-active-text: #1a7a34;
+  --status-disc-bg: #fde3e3;
+  --status-disc-text: #b3261e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14161f;
+    --card-bg: #1c1f2b;
+    --text: #e7e9f2;
+    --text-muted: #a3a8bd;
+    --border: #2e3244;
+
+    --accent: #7ea1f1;
+    --chip-bg: #232a45;
+    --avatar-bg: #fff;
+    --window-bg: #22263380;
+    --titlebar-bg: #2a2f42;
+    --disabled-bg: #262b3c;
+    --disabled-text: #767c94;
+    --status-active-bg: #163726;
+    --status-active-text: #5fd88a;
+    --status-disc-bg: #3a1f1f;
+    --status-disc-text: #ff8f87;
+  }
+
+  .mockup-window {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  }
 }
 
 * {
@@ -23,7 +65,7 @@ body {
 }
 
 a {
-  color: var(--navy);
+  color: var(--accent);
 }
 
 .wrap {
@@ -49,7 +91,7 @@ header.site-header img.avatar {
   width: 72px;
   height: 72px;
   border-radius: 18px;
-  background: #fff;
+  background: var(--avatar-bg);
   padding: 6px;
 }
 
@@ -140,8 +182,8 @@ h2 {
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--navy);
-  background: #e8edfb;
+  color: var(--accent);
+  background: var(--chip-bg);
   border-radius: 999px;
   padding: 3px 10px;
   margin-bottom: 10px;
@@ -189,17 +231,17 @@ h2 {
 
 .btn-secondary {
   background: transparent;
-  color: var(--navy);
-  border-color: var(--navy);
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 .btn-secondary:hover {
-  background: #e8edfb;
+  background: var(--chip-bg);
 }
 
 .btn-disabled {
-  background: #eceef5;
-  color: #9198b0;
+  background: var(--disabled-bg);
+  color: var(--disabled-text);
   cursor: default;
 }
 
@@ -211,7 +253,7 @@ footer {
 }
 
 footer a {
-  color: var(--navy);
+  color: var(--accent);
 }
 
 .policy h1 {
@@ -238,8 +280,8 @@ footer a {
 }
 
 .tag-list li {
-  background: #e8edfb;
-  color: var(--navy);
+  background: var(--chip-bg);
+  color: var(--accent);
   font-size: 0.82rem;
   font-weight: 600;
   padding: 4px 12px;
@@ -255,7 +297,7 @@ footer a {
 .skill-group h4 {
   margin: 0 0 10px;
   font-size: 1rem;
-  color: var(--navy);
+  color: var(--accent);
 }
 
 .mockup-wrap {
@@ -266,7 +308,7 @@ footer a {
 }
 
 .mockup-window {
-  background: #fff;
+  background: var(--window-bg);
   border: 1px solid var(--border);
   border-radius: 10px;
   overflow: hidden;
@@ -276,7 +318,7 @@ footer a {
 }
 
 .mockup-titlebar {
-  background: #eceef5;
+  background: var(--titlebar-bg);
   padding: 6px 10px;
   display: flex;
   gap: 6px;
@@ -328,18 +370,18 @@ table.mockup-table td {
 }
 
 .status-active {
-  background: #e3f7e8;
-  color: #1a7a34;
+  background: var(--status-active-bg);
+  color: var(--status-active-text);
 }
 
 .status-disconnected {
-  background: #fde3e3;
-  color: #b3261e;
+  background: var(--status-disc-bg);
+  color: var(--status-disc-text);
 }
 
 .mock-receipt h5 {
   margin: 0 0 6px;
-  color: var(--navy);
+  color: var(--accent);
   font-size: 0.85rem;
 }
 
@@ -357,7 +399,7 @@ table.mockup-table td {
   margin-top: 8px;
   font-size: 1rem;
   font-weight: 800;
-  color: var(--navy-dark);
+  color: var(--accent);
 }
 
 .mockup-stats {
@@ -371,7 +413,7 @@ table.mockup-table td {
   flex: 1;
   min-width: 68px;
   text-align: center;
-  background: var(--bg);
+  background: var(--chip-bg);
   border-radius: 8px;
   padding: 8px 4px;
 }
@@ -379,7 +421,7 @@ table.mockup-table td {
 .mockup-stat .num {
   font-size: 1.1rem;
   font-weight: 800;
-  color: var(--navy-dark);
+  color: var(--accent);
 }
 
 .mockup-stat .lbl {
