@@ -36,7 +36,7 @@
   <section id="about">
     <h2>About</h2>
     <p class="section-lead">I hold a Bachelor of Science in Computer Engineering. By formal title, though, I'm a Planning Officer I under the Municipal Planning and Development Office (MPDO) of the LGU of Tampilisan — not an IT designate, and our LGU has no dedicated MIS office. So out of my own initiative — not assignment — I've designed, built, and maintained every system below.</p>
-    <p class="section-lead">I build small, focused, offline-first apps for Filipino users, and I design and deploy the production systems behind them. My work spans classroom tools for teachers (Grado PH, QRAfT), everyday calculators for employees (GovDeduct PH), and self-hosted systems for the LGU of Tampilisan — TAWAS (water billing), the Tampilisan Attendance System (employee attendance tracking), and the MSWDO ID Management System (PWD/Senior Citizen ID issuance, in development). The self-hosted systems run on self-managed Proxmox VE/OPNsense infrastructure — on hardware owned by the LGU — entirely outside my formal job description. I also built and continue to maintain the LGU's official public website separately, on WordPress using DICT's Government Web Template, hosted through DICT's free government web hosting program. I also make deliberate use of AI-assisted development tools to move faster on code, documentation, and deployment scripting, without cutting corners on quality or security. Open to freelance work.</p>
+    <p class="section-lead">I build small, focused, offline-first apps for Filipino users, and I design and deploy the production systems behind them. My work spans classroom tools for teachers (Grado PH, QRAfT), everyday calculators for employees (GovDeduct PH), and self-hosted systems for the LGU of Tampilisan — TAWAS (water billing), the Tampilisan Attendance System (employee attendance tracking), the MSWDO ID Management System (PWD/Senior Citizen ID issuance, in development), and the GSO Fixed Asset & Inventory Management System (government property tracking). The self-hosted systems run on self-managed Proxmox VE/OPNsense infrastructure — on hardware owned by the LGU — entirely outside my formal job description. I also built and continue to maintain the LGU's official public website separately, on WordPress using DICT's Government Web Template, hosted through DICT's free government web hosting program. I also make deliberate use of AI-assisted development tools to move faster on code, documentation, and deployment scripting, without cutting corners on quality or security. Open to freelance work.</p>
   </section>
 
   <section id="apps">
@@ -333,6 +333,33 @@
     </div>
 
     <div class="app-card">
+      <img class="icon" src="assets/gso-icon.svg" alt="GSO Fixed Asset &amp; Inventory Management System icon">
+      <div class="body">
+        <span class="platform">Web App &middot; Self-Hosted &middot; Self-Initiated &middot; Live</span>
+        <h3>GSO Fixed Asset &amp; Inventory Management System</h3>
+        <p class="desc">A property and inventory tracking system for the LGU of Tampilisan's General Services Office (GSO) — designed, built, and deployed independently, outside my formal job description. Tracks every government asset's property number, acquisition cost, assigned department and accountable person, condition, and full history through to disposal. Currently managing 885 tracked assets across departments, deployed and actively in use today.</p>
+        <ul class="features">
+          <li>Django + PostgreSQL, served by Gunicorn behind nginx</li>
+          <li>Full asset lifecycle tracking — acquisition, department/accountable-person assignment, condition, and disposal, with a complete per-asset history log</li>
+          <li>Periodic physical inventory count module for reconciling records against what's actually on the ground</li>
+          <li>Bulk Excel import/export (openpyxl, pandas) for large-scale data handling</li>
+          <li>Runs in a dedicated LXC container on the same Proxmox VE host as TAWAS, the Attendance System, and MSWDO</li>
+        </ul>
+        <ul class="tag-list">
+          <li>Django</li>
+          <li>PostgreSQL</li>
+          <li>Pandas / openpyxl</li>
+          <li>Proxmox VE</li>
+          <li>LXC</li>
+          <li>OPNsense</li>
+        </ul>
+        <div class="btn-row">
+          <span class="btn btn-disabled">Private deployment — LGU internal network</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-card">
       <img class="icon" src="assets/lgu-website-icon.svg" alt="Municipality of Tampilisan website icon">
       <div class="body">
         <span class="platform">WordPress &middot; DICT Free Web Hosting &middot; Self-Initiated &middot; Live</span>
@@ -368,6 +395,7 @@
           <li>Flask</li>
           <li>Django</li>
           <li>SQL (PostgreSQL, SQLite)</li>
+          <li>Data Processing (Pandas, openpyxl)</li>
           <li>WordPress / PHP</li>
         </ul>
       </div>
