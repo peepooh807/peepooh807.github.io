@@ -35,8 +35,8 @@
 
   <section id="about">
     <h2>About</h2>
-    <p class="section-lead">I hold a Bachelor of Science in Computer Engineering. By formal title, though, I'm a Planning Officer I under the Municipal Planning and Development Office (MPDO) of the LGU of Tampilisan — not an IT designate, and our LGU has no dedicated MIS office. So out of my own initiative — not assignment — I've designed, built, and maintained every system below.</p>
-    <p class="section-lead">I build small, focused, offline-first apps for Filipino users, and I design and deploy the production systems behind them. My work spans classroom tools for teachers (Grado PH, QRAfT), everyday calculators for employees (GovDeduct PH), and self-hosted systems for the LGU of Tampilisan — TAWAS (water billing), the Tampilisan Attendance System (employee attendance tracking), the MSWDO ID Management System (PWD/Senior Citizen ID issuance, in development), and the GSO Fixed Asset & Inventory Management System (government property tracking). The self-hosted systems run on self-managed Proxmox VE/OPNsense infrastructure — on hardware owned by the LGU — entirely outside my formal job description. I also built and continue to maintain the LGU's official public website separately, on WordPress using DICT's Government Web Template, hosted through DICT's free government web hosting program. I also make deliberate use of AI-assisted development tools to move faster on code, documentation, and deployment scripting, without cutting corners on quality or security. Open to freelance work.</p>
+    <p class="section-lead">I hold a Bachelor of Science in Computer Engineering. By formal title, though, I'm a Planning Officer I under the Municipal Planning and Development Office (MPDO) of the LGU of Tampilisan — not an IT designate, and our LGU has no dedicated MIS office. So I built and maintain most of the LGU systems below on my own initiative, not by assignment. The exception is Tampi Alert, the citizen emergency alert system, which I built as part of my assigned work for the POPS program.</p>
+    <p class="section-lead">I build small, focused, offline-first apps for Filipino users, and I design and deploy the production systems behind them. My work spans classroom tools for teachers (Grado PH, QRAfT), everyday calculators for employees (GovDeduct PH), and self-hosted systems for the LGU of Tampilisan — TAWAS (water billing), the Tampilisan Attendance System (employee attendance tracking), the MSWDO ID Management System (PWD/Senior Citizen ID issuance, in development), and the GSO Fixed Asset & Inventory Management System (government property tracking). The self-hosted systems run on self-managed Proxmox VE/OPNsense infrastructure — on hardware owned by the LGU — entirely outside my formal job description. I also built and continue to maintain the LGU's official public website separately, on WordPress using DICT's Government Web Template, hosted through DICT's free government web hosting program. Separately, Tampi Alert is a Firebase-based emergency alert system for the Municipal Police Station and Bureau of Fire Protection, now pilot-ready. I also make deliberate use of AI-assisted development tools to move faster on code, documentation, and deployment scripting, without cutting corners on quality or security. Open to freelance work.</p>
   </section>
 
   <section id="skills">
@@ -48,11 +48,13 @@
         <ul class="tag-list">
           <li>Python</li>
           <li>Kotlin / Android</li>
+          <li>Flutter / Dart</li>
           <li>Flask</li>
           <li>Django</li>
           <li>SQL (PostgreSQL, SQLite)</li>
           <li>Data Processing (Pandas, openpyxl)</li>
           <li>WordPress / PHP</li>
+          <li>React / TypeScript</li>
         </ul>
       </div>
       <div class="skill-group">
@@ -64,6 +66,14 @@
           <li>VLAN Segmentation</li>
           <li>nginx</li>
           <li>systemd</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Cloud &amp; Mapping</h4>
+        <ul class="tag-list">
+          <li>Firebase (Firestore, Cloud Functions, Auth, Hosting)</li>
+          <li>Google Maps Platform</li>
+          <li>GeoJSON</li>
         </ul>
       </div>
       <div class="skill-group">
@@ -459,6 +469,34 @@
         </ul>
         <div class="btn-row">
           <a class="btn btn-primary" href="https://tampilisan.gov.ph" target="_blank" rel="noopener">Visit Website</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-card">
+      <img class="icon" src="assets/tampi-alert-icon.png" alt="Tampi Alert icon">
+      <div class="body">
+        <span class="platform">Android App &middot; Web Dashboard &middot; Firebase &middot; Pilot-Ready</span>
+        <h3>Tampi Alert — Citizen Emergency Alert System</h3>
+        <p class="desc">A citizen emergency-reporting system for the LGU of Tampilisan's Municipal Police Station (MPS) and Bureau of Fire Protection (BFP), built as part of my assigned work for the municipality's POPS (Peace and Order and Public Safety) program. A resident sends an alert from an Android app with their name, phone number, GPS location, and a geotagged photo, and it reaches a station dispatch dashboard right away, with a siren, live map, and dispatch workflow. Built and deployed end to end, and pilot-ready ahead of a field trial.</p>
+        <ul class="features">
+          <li>Flutter Android app with an in-app camera only (no gallery uploads): each photo is compressed and watermarked with GPS, name, and time at the moment of capture</li>
+          <li>Offline store-and-forward queue, so a report made in a low-signal area is sent automatically once a connection returns</li>
+          <li>React + TypeScript dispatch dashboard: a new alert triggers a siren and a full-screen takeover, with live incident pins on a Google Maps view of the barangay boundaries</li>
+          <li>Dispatcher workflow: call-back verification, status tracking, station distance with up to three alternative driving routes (MPS and BFP), and a false-alarm ban list</li>
+          <li>Firebase backend (Firestore, Storage, Auth, Cloud Messaging, Hosting) with TypeScript Cloud Functions that validate each report, flag rapid repeat submissions, and tag it to its barangay from local GeoJSON boundaries, with no paid geocoding API</li>
+          <li>Designed with the Data Privacy Act (RA 10173) in mind: consent screen, staff-only access, a full audit log, and automatic deletion of resolved incidents and their photos after 6 months; plus staff invitations, usage stats, and a monthly CSV report</li>
+        </ul>
+        <ul class="tag-list">
+          <li>Flutter</li>
+          <li>Dart</li>
+          <li>React</li>
+          <li>TypeScript</li>
+          <li>Firebase</li>
+          <li>Google Maps</li>
+        </ul>
+        <div class="btn-row">
+          <span class="btn btn-disabled">Staff-only dashboard — not publicly accessible</span>
         </div>
       </div>
     </div>
