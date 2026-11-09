@@ -36,7 +36,7 @@
   <section id="about">
     <h2>About</h2>
     <p class="section-lead">I hold a Bachelor of Science in Computer Engineering and am a Licensed Professional Teacher (LPT), with 18 units of Professional Education Courses from Philippine Advent College, Sindangan (2018). That is why I build tools for teachers with a real understanding of the classroom. By formal title, though, I'm a Planning Officer I under the Municipal Planning and Development Office (MPDO) of the LGU of Tampilisan — not an IT designate, and our LGU has no dedicated MIS office. So I built and maintain most of the LGU systems below on my own initiative, not by assignment. The exception is Tampi Alert, the citizen emergency alert system, which I built as part of my assigned work for the POPS program.</p>
-    <p class="section-lead">I build small, focused, offline-first apps for Filipino users, and I design and deploy the production systems behind them. My work spans classroom tools for teachers (Grado PH, QRAfT), everyday calculators for employees (GovDeduct PH), and self-hosted systems for the LGU of Tampilisan — TAWAS (water billing), the Tampilisan Attendance System (employee attendance tracking), the MSWDO ID Management System (PWD/Senior Citizen ID issuance, in development), and the GSO Fixed Asset & Inventory Management System (government property tracking). The self-hosted systems run on self-managed Proxmox VE/OPNsense infrastructure — on hardware owned by the LGU — entirely outside my formal job description. I also built and continue to maintain the LGU's official public website separately, on WordPress using DICT's Government Web Template, hosted through DICT's free government web hosting program. Separately, Tampi Alert is a Firebase-based emergency alert system for the Municipal Police Station and Bureau of Fire Protection, now pilot-ready. I also make deliberate use of AI-assisted development tools to move faster on code, documentation, and deployment scripting, without cutting corners on quality or security. Open to freelance work.</p>
+    <p class="section-lead">I build small, focused, offline-first apps for Filipino users, and I design and deploy the production systems behind them. My work spans classroom tools for teachers (Grado PH, QRAfT), everyday calculators for employees (GovDeduct PH), and self-hosted systems for the LGU of Tampilisan — TAWAS (water billing), the Tampilisan Attendance System (employee attendance tracking), the MSWDO ID Management System (PWD/Senior Citizen ID issuance, in development), the GSO Fixed Asset & Inventory Management System (government property tracking), and the LGU Financial Management System (accounting, budget, disbursement, and treasury, now in a dry run with the accounting staff). The self-hosted systems run on self-managed Proxmox VE/OPNsense infrastructure — on hardware owned by the LGU — entirely outside my formal job description. I also built and continue to maintain the LGU's official public website separately, on WordPress using DICT's Government Web Template, hosted through DICT's free government web hosting program. Separately, Tampi Alert is a Firebase-based emergency alert system for the Municipal Police Station and Bureau of Fire Protection, now pilot-ready. I also make deliberate use of AI-assisted development tools to move faster on code, documentation, and deployment scripting, without cutting corners on quality or security. Open to freelance work.</p>
   </section>
 
   <section id="skills">
@@ -446,6 +446,34 @@
         </ul>
         <div class="btn-row">
           <span class="btn btn-disabled">Private deployment — LGU internal network</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-card">
+      <img class="icon" src="assets/fms-icon.svg" alt="LGU Financial Management System icon">
+      <div class="body">
+        <span class="platform">Web App &middot; Self-Hosted &middot; Dry Run with Accounting</span>
+        <h3>LGU Financial Management System</h3>
+        <p class="desc">An integrated financial management system for the LGU of Tampilisan, built around the General Fund books the accounting office already keeps in Excel. It brings accounting, budget, disbursement, and treasury work into one system, following the government accounting workflow from budget line to obligation, voucher, check, official receipt, and journal entry. Currently in a dry run with the accounting staff, not yet in production use.</p>
+        <ul class="features">
+          <li>Accounting: chart of accounts, journals (GJ, CRJ, CDJ, CkDJ, ADADJ) with balanced-entry posting that locks the entry, and printable vouchers</li>
+          <li>Reports: Trial Balance, Statements of Financial Position and Performance with notes, Cash Flow, Changes in Equity, Cash in Bank, and Cash Advances, printed with official headings and signatory blocks</li>
+          <li>Budget: imports the Budget Office's Registry of Appropriations workbooks, with SAAO and SAAOB, OBR entry with overspending control, allotments, augmentation, and a budget-versus-accounting reconciliation</li>
+          <li>Disbursement and Treasury: Disbursement Vouchers through Pending, Pre-audited, Approved, and Check/ADA issued, official receipts, collection and deposit reports, and bank deposit matching</li>
+          <li>Linked to TAWAS: water bills flow into Treasury, where staff record payments against the booklet OR number and the collections reach Accounting</li>
+          <li>Role-based access for Accounting, Budget, Treasury, and the Mayor, plus a full audit log of every change and sign-in</li>
+          <li>Deploys to a Debian/Ubuntu LXC container (Django, PostgreSQL, Gunicorn, nginx, systemd, nightly backups), with a one-click Windows setup for trials</li>
+        </ul>
+        <ul class="tag-list">
+          <li>Django</li>
+          <li>PostgreSQL</li>
+          <li>Gunicorn / nginx</li>
+          <li>Proxmox VE</li>
+          <li>LXC</li>
+        </ul>
+        <div class="btn-row">
+          <span class="btn btn-disabled">Dry run &mdash; internal use only, no public access</span>
         </div>
       </div>
     </div>
