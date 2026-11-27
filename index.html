@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>peepooh807 — Apps &amp; Projects</title>
-<meta name="description" content="Software developer building offline-first apps (Grado PH, GovDeduct PH) and deploying production systems — Flask/PostgreSQL web apps on Proxmox VE/LXC, behind OPNsense firewalls.">
+<meta name="description" content="Software developer building offline-first apps (Grado PH, GovDeduct PH) and deploying production systems: Flask/PostgreSQL web apps on Proxmox VE/LXC, behind OPNsense firewalls.">
 <link rel="icon" href="assets/icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -16,7 +16,7 @@
     <div>
       <h1>Johnritz V. Albelda, LPT</h1>
       <p class="handle">peepooh807</p>
-      <p class="tagline">Software developer — offline-first apps, and self-hosted infrastructure for local government and education.</p>
+      <p class="tagline">Software developer. I build offline-first apps for teachers and employees, and self-hosted systems for local government.</p>
     </div>
   </div>
   <div class="wrap">
@@ -26,7 +26,7 @@
       <a href="#apps">Apps</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
-      <a href="assets/Johnritz_Albelda_CV.pdf?v=20261109" target="_blank" rel="noopener">Download CV</a>
+      <a href="assets/Johnritz_Albelda_CV.pdf?v=20261127" target="_blank" rel="noopener">Download CV</a>
     </nav>
   </div>
 </header>
@@ -35,8 +35,9 @@
 
   <section id="about">
     <h2>About</h2>
-    <p class="section-lead">I hold a Bachelor of Science in Computer Engineering and am a Licensed Professional Teacher (LPT), with 18 units of Professional Education Courses from Philippine Advent College, Sindangan (2018). That is why I build tools for teachers with a real understanding of the classroom. By formal title, though, I'm a Planning Officer I under the Municipal Planning and Development Office (MPDO) of the LGU of Tampilisan — not an IT designate, and our LGU has no dedicated MIS office. So I built and maintain most of the LGU systems below on my own initiative, not by assignment. The exception is Tampi Alert, the citizen emergency alert system, which I built as part of my assigned work for the POPS program.</p>
-    <p class="section-lead">I build small, focused, offline-first apps for Filipino users, and I design and deploy the production systems behind them. My work spans classroom tools for teachers (Grado PH, QRAfT), everyday calculators for employees (GovDeduct PH), and self-hosted systems for the LGU of Tampilisan — TAWAS (water billing), the Tampilisan Attendance System (employee attendance tracking), the MSWDO ID Management System (PWD/Senior Citizen ID issuance, in development), the GSO Fixed Asset & Inventory Management System (government property tracking), and the LGU Financial Management System (accounting, budget, disbursement, and treasury, now in a dry run with the accounting staff). The self-hosted systems run on self-managed Proxmox VE/OPNsense infrastructure — on hardware owned by the LGU — entirely outside my formal job description. I also built and continue to maintain the LGU's official public website separately, on WordPress using DICT's Government Web Template, hosted through DICT's free government web hosting program. Separately, Tampi Alert is a Firebase-based emergency alert system for the Municipal Police Station and Bureau of Fire Protection, now pilot-ready. I also make deliberate use of AI-assisted development tools to move faster on code, documentation, and deployment scripting, without cutting corners on quality or security. Open to freelance work.</p>
+    <p class="section-lead">I have a Bachelor of Science in Computer Engineering, and I am a Licensed Professional Teacher (LPT) with 18 units of Professional Education Courses from Philippine Advent College, Sindangan (2018). Having taught helps a lot when I build tools for teachers. My actual job title is Planning Officer I at the Municipal Planning and Development Office (MPDO) of the LGU of Tampilisan. I am not an IT designate, and our LGU has no MIS office, so I built most of the LGU systems below on my own initiative, not because I was assigned to. The exception is Tampi Alert, the citizen emergency alert system, which was part of my assigned work for the POPS program.</p>
+    <p class="section-lead">I build small, offline-first apps for Filipino users: classroom tools for teachers (Grado PH, QRAfT) and a payroll deductions calculator for employees (GovDeduct PH). For the LGU of Tampilisan I built TAWAS (water billing), the Tampilisan Attendance System, the MSWDO ID Management System for PWD and Senior Citizen IDs (in development), the GSO Fixed Asset &amp; Inventory Management System, and the LGU Financial Management System for accounting, budget, disbursement, and treasury (in a dry run with the accounting staff). These run on a Proxmox VE server and an OPNsense firewall that I set up and manage, on hardware owned by the LGU. I also built and maintain the LGU's official website on WordPress with DICT's Government Web Template, hosted for free by DICT. Tampi Alert, a Firebase-based emergency alert system for the Municipal Police Station and Bureau of Fire Protection, is ready for its pilot.</p>
+    <p class="section-lead">How I work: I act as the architect. I sit down with the office that needs the system, work out the requirements, and design the database and the workflow. Then I use AI coding agents such as Claude Code to write most of the code. I review and test what they produce, fix what is wrong, handle the security, and deploy and maintain it myself. That is how one person can deliver full systems like these. Open to freelance work.</p>
   </section>
 
   <section id="skills">
@@ -81,7 +82,7 @@
         <ul class="tag-list">
           <li>Git &amp; GitHub</li>
           <li>Linux (Debian/Ubuntu)</li>
-          <li>AI-Assisted Development</li>
+          <li>AI Coding Agents (Claude Code)</li>
         </ul>
       </div>
     </div>
@@ -89,7 +90,7 @@
 
   <section id="apps">
     <h2>Apps</h2>
-    <p class="section-lead">Three independent apps so far — a DepEd-aligned grading tool for teachers, a QR-code attendance tracker for classrooms, and a payroll deductions estimator for any Filipino employee, government or private.</p>
+    <p class="section-lead">Three independent apps so far: a DepEd-aligned grading tool for teachers, a QR-code attendance tracker for classrooms, and a payroll deductions estimator for any Filipino employee, government or private.</p>
 
     <div class="app-card">
       <img class="icon" src="assets/icon.png" alt="Grado PH Android icon">
@@ -98,7 +99,7 @@
         <h3>Grado PH</h3>
         <p class="desc">An offline class record and grade computation app for K-12 teachers, phone-friendly and built for classrooms without reliable internet access.</p>
         <ul class="features">
-          <li>Offline-first — all data stays on the device</li>
+          <li>Works offline, and all data stays on the device</li>
           <li>Written Work / Performance Task / Examination weighted grading</li>
           <li>Official DepEd transmutation table and letter grades (K-3)</li>
           <li>Male/Female grouped class records, matching DepEd's paper format</li>
@@ -117,11 +118,11 @@
       <div class="body">
         <span class="platform">Windows Desktop</span>
         <h3>Grado PH Desktop</h3>
-        <p class="desc">A full DepEd grading and reporting suite for Windows, now at v2.4.9 — the complete Class Record, report card, and attendance workflow a teacher needs, offline and free to start, with a Pro tier for bulk export. No installation required for the portable build.</p>
+        <p class="desc">A full DepEd grading and reporting suite for Windows, now at v2.4.9. It covers the Class Record, report card, and attendance work a teacher needs, offline and free to start, with a Pro tier for bulk export. No installation required for the portable build.</p>
         <ul class="features">
-          <li>Class Records, Class Summary, and Final Grades — DO 015 s.2026 weighted computation, with K-3 letter grading (A-E) and full SHS track support</li>
-          <li>Shared class roster with smart Excel paste — auto-detects Name/Sex/LRN columns from any DepEd export layout</li>
-          <li>Complete DepEd form suite: SF9 report cards (Grades 4-12 and K-3/PACE), SF2 attendance register, and printable Class Records — each with school masthead and uploaded school logo</li>
+          <li>Class Records, Class Summary, and Final Grades, using DO 015 s.2026 weighted computation, with K-3 letter grading (A-E) and full SHS track support</li>
+          <li>Shared class roster with Excel paste that auto-detects Name/Sex/LRN columns from any DepEd export layout</li>
+          <li>Complete DepEd form suite: SF9 report cards (Grades 4-12 and K-3/PACE), SF2 attendance register, and printable Class Records, each with school masthead and uploaded school logo</li>
           <li>One-file Backup &amp; Restore for moving everything to a new computer</li>
           <li>Pro tier adds Excel export and one-pass Bulk Export across every class and form</li>
         </ul>
@@ -138,17 +139,17 @@
       <div class="body">
         <span class="platform">Android &middot; Closed Beta</span>
         <h3>QRAfT</h3>
-        <p class="desc">QR Attendance for Teachers — keep a class roster, print QR ID cards for each student, scan them in every morning, and export a daily attendance sheet as a PDF. No server, no accounts; everything lives on the teacher's device.</p>
+        <p class="desc">QR Attendance for Teachers. Keep a class roster, print QR ID cards for each student, scan them in every morning, and export a daily attendance sheet as a PDF. No server, no accounts; everything lives on the teacher's device.</p>
         <ul class="features">
           <li>Print-and-cut QR ID cards generated per student, straight from the roster</li>
-          <li>Full-screen scan-to-mark-present flow via Google's Code Scanner — no camera permission needed</li>
+          <li>Full-screen scan-to-mark-present flow via Google's Code Scanner, so no camera permission is needed</li>
           <li>Multiple classes/sections, each with its own roster and daily attendance sheet</li>
           <li>Female-first, alphabetical grouping matching official attendance sheet format</li>
           <li>CSV/Excel bulk import for rosters, PDF export with school letterhead and signature line</li>
-          <li>Offline-first — attendance data stays on-device, excluded from Android's automatic cloud backup</li>
+          <li>Works offline; attendance data stays on-device, excluded from Android's automatic cloud backup</li>
         </ul>
         <div class="btn-row">
-          <span class="btn btn-disabled">Closed beta — coming soon to Google Play</span>
+          <span class="btn btn-disabled">Closed beta, coming soon to Google Play</span>
           <a class="btn btn-secondary" href="privacy-qraft.html">Privacy Policy</a>
         </div>
       </div>
@@ -159,13 +160,13 @@
       <div class="body">
         <span class="platform">Android</span>
         <h3>GovDeduct PH</h3>
-        <p class="desc">An offline salary deductions calculator for Filipino employees — government and private sector alike. Estimates GSIS/SSS, PhilHealth, Pag-IBIG, and BIR withholding tax from a single monthly salary figure.</p>
+        <p class="desc">An offline salary deductions calculator for Filipino employees, in government or the private sector. Estimates GSIS/SSS, PhilHealth, Pag-IBIG, and BIR withholding tax from a single monthly salary figure.</p>
         <ul class="features">
           <li>GSIS &amp; SSS contribution estimates, for employed and voluntary/self-employed contributors</li>
           <li>PhilHealth premium and Pag-IBIG contribution estimates</li>
           <li>BIR withholding tax estimate (TRAIN law brackets)</li>
           <li>All-in-one summary: total deductions and net pay</li>
-          <li>Fully offline — nothing you enter is saved or transmitted</li>
+          <li>Fully offline. Nothing you enter is saved or transmitted</li>
         </ul>
         <div class="btn-row">
           <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.pepo.govcalcph" target="_blank" rel="noopener">View on Google Play</a>
@@ -177,14 +178,14 @@
 
   <section id="projects">
     <h2>Projects</h2>
-    <p class="section-lead">Beyond mobile/desktop apps, I design and run production systems end-to-end — from the application down to the network they sit on.</p>
+    <p class="section-lead">Beyond mobile/desktop apps, I also build and run production systems, from the application down to the network it runs on.</p>
 
     <div class="app-card">
       <img class="icon" src="assets/tawas-icon.svg" alt="TAWAS Water Billing System icon">
       <div class="body">
         <span class="platform">Web App &middot; Self-Hosted &middot; Self-Initiated</span>
         <h3>TAWAS Water Billing System</h3>
-        <p class="desc">Designed, built, and deployed independently for the LGU of Tampilisan's water district — outside my formal job description, with no dedicated IT department to hand it off to. Full ownership end-to-end: consumer records, meter reading entry, and itemized bill computation (base charge, environmental fee, system loss), with role-based accounts for admins and encoders. Currently billing roughly 675 consumer accounts monthly, deployed and actively in use today.</p>
+        <p class="desc">A water billing system for the LGU of Tampilisan's waterworks, which I designed, built, and deployed on my own, outside my formal job description. It covers consumer records, meter reading entry, and itemized bill computation (base charge, environmental fee, system loss), with role-based accounts for admins and encoders. Currently billing roughly 675 consumer accounts monthly, and it is in use today.</p>
         <ul class="features">
           <li>Flask + PostgreSQL, served by Waitress behind an nginx reverse proxy</li>
           <li>Runs in a dedicated LXC container on a Proxmox VE host, with a systemd service for auto-restart</li>
@@ -230,7 +231,7 @@
             </div>
           </div>
         </div>
-        <p class="mockup-caption">Recreated UI with placeholder data — no real consumer information is shown.</p>
+        <p class="mockup-caption">Recreated UI with placeholder data. No real consumer information is shown.</p>
 
         <ul class="tag-list">
           <li>Flask</li>
@@ -241,7 +242,7 @@
           <li>nginx</li>
         </ul>
         <div class="btn-row">
-          <span class="btn btn-disabled">Private deployment — LGU internal network</span>
+          <span class="btn btn-disabled">Private deployment on the LGU internal network</span>
         </div>
       </div>
     </div>
@@ -251,10 +252,10 @@
       <div class="body">
         <span class="platform">Web App &middot; Self-Hosted &middot; Self-Initiated</span>
         <h3>Tampilisan Attendance System</h3>
-        <p class="desc">A general-purpose QR-code employee attendance tracker built for LGU Tampilisan — designed, built, and deployed independently, outside my formal job description. Capable of daily attendance tracking; currently used for the LGU's weekly Monday flag ceremony. Employees are scanned in via a browser-based scanner (with a companion Android scanner app), with a live dashboard, attendance reports, and a full audit log of every scan. Currently tracking 129 LGU employees, deployed and actively in use today.</p>
+        <p class="desc">A general-purpose QR-code employee attendance tracker built for LGU Tampilisan, which I designed, built, and deployed on my own, outside my formal job description. Capable of daily attendance tracking; currently used for the LGU's weekly Monday flag ceremony. Employees are scanned in via a browser-based scanner (with a companion Android scanner app), with a live dashboard, attendance reports, and a full audit log of every scan. Currently tracking 129 LGU employees, and it is in use today.</p>
         <ul class="features">
           <li>Flask + SQLAlchemy, running as a self-managed systemd service</li>
-          <li>Browser-based QR scanning (jsQR) — no native app required on the scanning device</li>
+          <li>Browser-based QR scanning (jsQR), so no native app is needed on the scanning device</li>
           <li>Companion Android scanner app (Kotlin) for a dedicated kiosk-style scanning station</li>
           <li>Self-signed HTTPS and a locked-down host firewall (UFW) on top of the LXC container</li>
           <li>Runs in a dedicated LXC container on the same Proxmox VE host as TAWAS</li>
@@ -299,7 +300,7 @@
             </div>
           </div>
         </div>
-        <p class="mockup-caption">Recreated UI with placeholder data — no real employee information is shown.</p>
+        <p class="mockup-caption">Recreated UI with placeholder data. No real employee information is shown.</p>
 
         <ul class="tag-list">
           <li>Flask</li>
@@ -310,7 +311,7 @@
           <li>Kotlin / Android</li>
         </ul>
         <div class="btn-row">
-          <span class="btn btn-disabled">Private deployment — LGU internal network</span>
+          <span class="btn btn-disabled">Private deployment on the LGU internal network</span>
         </div>
       </div>
     </div>
@@ -320,11 +321,11 @@
       <div class="body">
         <span class="platform">Web App &middot; Self-Hosted &middot; Self-Initiated &middot; In Development</span>
         <h3>MSWDO ID Management System</h3>
-        <p class="desc">A Django system for the Municipal Social Welfare &amp; Development Office to register and issue PWD (Persons with Disability) and Senior Citizen IDs — designed and built independently, outside my formal job description. Auto-generates ID numbers, prints professional ID cards with photo and QR code, and lists the RA 10754 / RA 9994 privileges on the back. Currently in development and testing, not yet deployed with live constituent records.</p>
+        <p class="desc">A Django system for the Municipal Social Welfare &amp; Development Office to register and issue PWD (Persons with Disability) and Senior Citizen IDs, which I designed and built on my own, outside my formal job description. Auto-generates ID numbers, prints professional ID cards with photo and QR code, and lists the RA 10754 / RA 9994 privileges on the back. Currently in development and testing, not yet deployed with live constituent records.</p>
         <ul class="features">
           <li>Django + PostgreSQL, served by Gunicorn behind nginx</li>
           <li>Auto-generated PWD/SC ID numbers, with photo and QR code on the printed card</li>
-          <li>Role-based access — Admin, Encoder, Viewer — for MSWDO staff</li>
+          <li>Role-based access for MSWDO staff (Admin, Encoder, Viewer)</li>
           <li>Dashboard with registration stats, disability-type and barangay breakdowns</li>
           <li>CSV export for both PWD and Senior Citizen records</li>
           <li>Runs in a dedicated LXC container on the same Proxmox VE host as TAWAS and the Attendance System</li>
@@ -367,7 +368,7 @@
             </div>
           </div>
         </div>
-        <p class="mockup-caption">Recreated UI with placeholder data — no real PWD or Senior Citizen information is shown.</p>
+        <p class="mockup-caption">Recreated UI with placeholder data. No real PWD or Senior Citizen information is shown.</p>
 
         <ul class="tag-list">
           <li>Django</li>
@@ -378,7 +379,7 @@
           <li>nginx</li>
         </ul>
         <div class="btn-row">
-          <span class="btn btn-disabled">In development — not yet deployed</span>
+          <span class="btn btn-disabled">In development, not yet deployed</span>
         </div>
       </div>
     </div>
@@ -388,10 +389,10 @@
       <div class="body">
         <span class="platform">Web App &middot; Self-Hosted &middot; Self-Initiated &middot; Live</span>
         <h3>GSO Fixed Asset &amp; Inventory Management System</h3>
-        <p class="desc">A property and inventory tracking system for the LGU of Tampilisan's General Services Office (GSO) — designed, built, and deployed independently, outside my formal job description. Tracks every government asset's property number, acquisition cost, assigned department and accountable person, condition, and full history through to disposal. Currently managing 896 tracked assets worth roughly &#8369;172.8 million across departments, deployed and actively in use today.</p>
+        <p class="desc">A property and inventory tracking system for the LGU of Tampilisan's General Services Office (GSO), which I designed, built, and deployed on my own, outside my formal job description. Tracks every government asset's property number, acquisition cost, assigned department and accountable person, condition, and full history through to disposal. Currently managing 896 tracked assets worth roughly &#8369;172.8 million across departments, and it is in use today.</p>
         <ul class="features">
           <li>Django + PostgreSQL, served by Gunicorn behind nginx</li>
-          <li>Full asset lifecycle tracking — acquisition, department/accountable-person assignment, condition, and disposal, with a complete per-asset history log</li>
+          <li>Full asset lifecycle tracking: acquisition, department/accountable-person assignment, condition, and disposal, with a complete per-asset history log</li>
           <li>Periodic physical inventory count module for reconciling records against what's actually on the ground</li>
           <li>Bulk Excel import/export (openpyxl, pandas) for large-scale data handling</li>
           <li>Runs in a dedicated LXC container on the same Proxmox VE host as TAWAS, the Attendance System, and MSWDO</li>
@@ -445,7 +446,7 @@
           <li>OPNsense</li>
         </ul>
         <div class="btn-row">
-          <span class="btn btn-disabled">Private deployment — LGU internal network</span>
+          <span class="btn btn-disabled">Private deployment on the LGU internal network</span>
         </div>
       </div>
     </div>
@@ -473,7 +474,7 @@
           <li>LXC</li>
         </ul>
         <div class="btn-row">
-          <span class="btn btn-disabled">Dry run &mdash; internal use only, no public access</span>
+          <span class="btn btn-disabled">Dry run, internal use only, no public access</span>
         </div>
       </div>
     </div>
@@ -483,7 +484,7 @@
       <div class="body">
         <span class="platform">WordPress &middot; DICT Free Web Hosting &middot; Self-Initiated &middot; Live</span>
         <h3>Municipality of Tampilisan — Official Website</h3>
-        <p class="desc">The LGU of Tampilisan's official public website, which I built on WordPress using DICT's Government Web Template (GWT), submitted to DICT, and now maintain via the cPanel access DICT provides on their free government web hosting — outside my formal job description, since the LGU has no dedicated MIS office. Covers the transparency and public-disclosure pages every LGU site is expected to carry (Transparency Seal, Freedom of Information, GAD Corner), plus announcements, tourism content, and office contact details.</p>
+        <p class="desc">The LGU of Tampilisan's official public website, which I built on WordPress using DICT's Government Web Template (GWT), submitted to DICT, and now maintain via the cPanel access DICT provides on their free government web hosting. I did this outside my formal job description, since the LGU has no dedicated MIS office. Covers the transparency and public-disclosure pages every LGU site is expected to carry (Transparency Seal, Freedom of Information, GAD Corner), plus announcements, tourism content, and office contact details.</p>
         <ul class="features">
           <li>Built on the DICT Government Web Template for WordPress, hosted free via DICT's government web hosting program (cPanel access)</li>
           <li>Transparency Seal, Freedom of Information, and GAD Corner pages kept current</li>
@@ -506,7 +507,7 @@
       <div class="body">
         <span class="platform">Android App &middot; Web Dashboard &middot; Firebase &middot; Pilot-Ready</span>
         <h3>Tampi Alert — Citizen Emergency Alert System</h3>
-        <p class="desc">A citizen emergency-reporting system for the LGU of Tampilisan's Municipal Police Station (MPS) and Bureau of Fire Protection (BFP), built as part of my assigned work for the municipality's POPS (Peace and Order and Public Safety) program. A resident sends an alert from an Android app with their name, phone number, GPS location, and a geotagged photo, and it reaches a station dispatch dashboard right away, with a siren, live map, and dispatch workflow. Built and deployed end to end, and pilot-ready ahead of a field trial.</p>
+        <p class="desc">A citizen emergency-reporting system for the LGU of Tampilisan's Municipal Police Station (MPS) and Bureau of Fire Protection (BFP), built as part of my assigned work for the municipality's POPS (Peace and Order and Public Safety) program. A resident sends an alert from an Android app with their name, phone number, GPS location, and a geotagged photo, and it reaches a station dispatch dashboard right away, with a siren, live map, and dispatch workflow. It is built, deployed, and ready for a field pilot.</p>
         <ul class="features">
           <li>Flutter Android app with an in-app camera only (no gallery uploads): each photo is compressed and watermarked with GPS, name, and time at the moment of capture</li>
           <li>Offline store-and-forward queue, so a report made in a low-signal area is sent automatically once a connection returns</li>
@@ -524,7 +525,7 @@
           <li>Google Maps</li>
         </ul>
         <div class="btn-row">
-          <span class="btn btn-disabled">Staff-only dashboard — not publicly accessible</span>
+          <span class="btn btn-disabled">Staff-only dashboard, not publicly accessible</span>
         </div>
       </div>
     </div>
@@ -534,7 +535,7 @@
     <h2>Contact</h2>
     <p class="section-lead">Questions, feedback, or freelance inquiries are welcome at <a href="mailto:pepooh696@gmail.com">pepooh696@gmail.com</a> or on <a href="https://www.linkedin.com/in/johnritz-albelda-8b64b3118/" target="_blank" rel="noopener">LinkedIn</a>.</p>
     <div class="btn-row">
-      <a class="btn btn-primary" href="assets/Johnritz_Albelda_CV.pdf?v=20261109" target="_blank" rel="noopener">Download CV (PDF)</a>
+      <a class="btn btn-primary" href="assets/Johnritz_Albelda_CV.pdf?v=20261127" target="_blank" rel="noopener">Download CV (PDF)</a>
     </div>
   </section>
 
