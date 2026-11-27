@@ -26,7 +26,7 @@
       <a href="#apps">Apps</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
-      <a href="assets/Johnritz_Albelda_CV.pdf?v=20261127b" target="_blank" rel="noopener">Download CV</a>
+      <a href="assets/Johnritz_Albelda_CV.pdf?v=20261127c" target="_blank" rel="noopener">Download CV</a>
     </nav>
   </div>
 </header>
@@ -35,9 +35,9 @@
 
   <section id="about">
     <h2>About</h2>
-    <p class="section-lead">I have a Bachelor of Science in Computer Engineering, and I am a Licensed Professional Teacher (LPT) with 18 units of Professional Education Courses from Philippine Advent College, Sindangan (2018). Having taught helps a lot when I build tools for teachers. My actual job title is Planning Officer I at the Municipal Planning and Development Office (MPDO) of the LGU of Tampilisan. I am not an IT designate, and our LGU has no MIS office, so I built most of the LGU systems below on my own initiative, not because I was assigned to. The exception is Tampi Alert, the citizen emergency alert system, which was part of my assigned work for the POPS program.</p>
+    <p class="section-lead">I have a Bachelor of Science in Computer Engineering, and I am a Licensed Professional Teacher (LPT) with 18 units of Professional Education Courses from Philippine Advent College, Sindangan (2018). Having taught helps a lot when I build tools for teachers. My actual job title is Planning Officer I at the Municipal Planning and Development Office (MPDO) of the LGU of Tampilisan. Our LGU has no MIS office, so alongside my planning duties I also handle systems, network, and application work for municipal operations. Tampi Alert, the citizen emergency alert system, was part of my assigned work for the POPS program; I took on the other LGU systems below myself.</p>
     <p class="section-lead">I build small, offline-first apps for Filipino users: classroom tools for teachers (Grado PH, QRAfT) and a payroll deductions calculator for employees (GovDeduct PH). For the LGU of Tampilisan I built TAWAS (water billing), the Tampilisan Attendance System, the MSWDO ID Management System for PWD and Senior Citizen IDs (in development), the GSO Fixed Asset &amp; Inventory Management System, and the LGU Financial Management System for accounting, budget, disbursement, and treasury (in a dry run with the accounting staff). These run on a Proxmox VE server and an OPNsense firewall that I set up and manage, on hardware owned by the LGU. I also built and maintain the LGU's official website on WordPress with DICT's Government Web Template, hosted for free by DICT. Tampi Alert, a Firebase-based emergency alert system for the Municipal Police Station and Bureau of Fire Protection, is ready for its pilot.</p>
-    <p class="section-lead">How I work: I act as the architect. I sit down with the office that needs the system, work out the requirements, and design the database and the workflow. Then I use AI coding agents and tools (Claude Code, ChatGPT, Gemini, Copilot) to write most of the code. I review and test what they produce, fix what is wrong, handle the security, and deploy and maintain it myself. That is how one person can deliver full systems like these. Open to freelance work.</p>
+    <p class="section-lead">How I work: I sit down with the office that needs the system, work out the requirements, and design the database and the workflow. I use AI coding tools (Claude Code, ChatGPT, Gemini, Copilot) to speed up implementation, and I handle the code review, debugging, security, deployment, and support once the system is in production. Open to freelance work.</p>
   </section>
 
   <section id="skills">
@@ -183,9 +183,9 @@
     <div class="app-card">
       <img class="icon" src="assets/tawas-icon.svg" alt="TAWAS Water Billing System icon">
       <div class="body">
-        <span class="platform">Web App &middot; Self-Hosted &middot; Self-Initiated</span>
+        <span class="platform">Web App &middot; Self-Hosted</span>
         <h3>TAWAS Water Billing System</h3>
-        <p class="desc">A water billing system for the LGU of Tampilisan's waterworks, which I designed, built, and deployed on my own, outside my formal job description. It covers consumer records, meter reading entry, and itemized bill computation (base charge, environmental fee, system loss), with role-based accounts for admins and encoders. Currently billing roughly 675 consumer accounts monthly, and it is in use today.</p>
+        <p class="desc">A water billing system for the LGU of Tampilisan's waterworks, which I designed, built, and deployed. It covers consumer records, meter reading entry, and itemized bill computation (base charge, environmental fee, system loss), with role-based accounts for admins and encoders. Currently billing roughly 675 consumer accounts monthly, and it is in use today.</p>
         <ul class="features">
           <li>Flask + PostgreSQL, served by Waitress behind an nginx reverse proxy</li>
           <li>Runs in a dedicated LXC container on a Proxmox VE host, with a systemd service for auto-restart</li>
@@ -250,9 +250,9 @@
     <div class="app-card">
       <img class="icon" src="assets/flag-icon.svg" alt="Tampilisan Attendance System icon">
       <div class="body">
-        <span class="platform">Web App &middot; Self-Hosted &middot; Self-Initiated</span>
+        <span class="platform">Web App &middot; Self-Hosted</span>
         <h3>Tampilisan Attendance System</h3>
-        <p class="desc">A general-purpose QR-code employee attendance tracker built for LGU Tampilisan, which I designed, built, and deployed on my own, outside my formal job description. Capable of daily attendance tracking; currently used for the LGU's weekly Monday flag ceremony. Employees are scanned in via a browser-based scanner (with a companion Android scanner app), with a live dashboard, attendance reports, and a full audit log of every scan. Currently tracking 129 LGU employees, and it is in use today.</p>
+        <p class="desc">A general-purpose QR-code employee attendance tracker built for LGU Tampilisan, which I designed, built, and deployed. Capable of daily attendance tracking; currently used for the LGU's weekly Monday flag ceremony. Employees are scanned in via a browser-based scanner (with a companion Android scanner app), with a live dashboard, attendance reports, and a full audit log of every scan. Currently tracking 129 LGU employees, and it is in use today.</p>
         <ul class="features">
           <li>Flask + SQLAlchemy, running as a self-managed systemd service</li>
           <li>Browser-based QR scanning (jsQR), so no native app is needed on the scanning device</li>
@@ -319,9 +319,9 @@
     <div class="app-card">
       <img class="icon" src="assets/mswdo-icon.svg" alt="MSWDO ID Management System icon">
       <div class="body">
-        <span class="platform">Web App &middot; Self-Hosted &middot; Self-Initiated &middot; In Development</span>
+        <span class="platform">Web App &middot; Self-Hosted &middot; In Development</span>
         <h3>MSWDO ID Management System</h3>
-        <p class="desc">A Django system for the Municipal Social Welfare &amp; Development Office to register and issue PWD (Persons with Disability) and Senior Citizen IDs, which I designed and built on my own, outside my formal job description. Auto-generates ID numbers, prints professional ID cards with photo and QR code, and lists the RA 10754 / RA 9994 privileges on the back. Currently in development and testing, not yet deployed with live constituent records.</p>
+        <p class="desc">A Django system for the Municipal Social Welfare &amp; Development Office to register and issue PWD (Persons with Disability) and Senior Citizen IDs, which I designed and built. Auto-generates ID numbers, prints professional ID cards with photo and QR code, and lists the RA 10754 / RA 9994 privileges on the back. Currently in development and testing, not yet deployed with live constituent records.</p>
         <ul class="features">
           <li>Django + PostgreSQL, served by Gunicorn behind nginx</li>
           <li>Auto-generated PWD/SC ID numbers, with photo and QR code on the printed card</li>
@@ -387,9 +387,9 @@
     <div class="app-card">
       <img class="icon" src="assets/gso-icon.svg" alt="GSO Fixed Asset &amp; Inventory Management System icon">
       <div class="body">
-        <span class="platform">Web App &middot; Self-Hosted &middot; Self-Initiated &middot; Live</span>
+        <span class="platform">Web App &middot; Self-Hosted &middot; Live</span>
         <h3>GSO Fixed Asset &amp; Inventory Management System</h3>
-        <p class="desc">A property and inventory tracking system for the LGU of Tampilisan's General Services Office (GSO), which I designed, built, and deployed on my own, outside my formal job description. Tracks every government asset's property number, acquisition cost, assigned department and accountable person, condition, and full history through to disposal. Currently managing 896 tracked assets worth roughly &#8369;172.8 million across departments, and it is in use today.</p>
+        <p class="desc">A property and inventory tracking system for the LGU of Tampilisan's General Services Office (GSO), which I designed, built, and deployed. Tracks every government asset's property number, acquisition cost, assigned department and accountable person, condition, and full history through to disposal. Currently managing 896 tracked assets worth roughly &#8369;172.8 million across departments, and it is in use today.</p>
         <ul class="features">
           <li>Django + PostgreSQL, served by Gunicorn behind nginx</li>
           <li>Full asset lifecycle tracking: acquisition, department/accountable-person assignment, condition, and disposal, with a complete per-asset history log</li>
@@ -482,9 +482,9 @@
     <div class="app-card">
       <img class="icon" src="assets/lgu-website-icon.svg" alt="Municipality of Tampilisan website icon">
       <div class="body">
-        <span class="platform">WordPress &middot; DICT Free Web Hosting &middot; Self-Initiated &middot; Live</span>
+        <span class="platform">WordPress &middot; DICT Free Web Hosting &middot; Live</span>
         <h3>Municipality of Tampilisan — Official Website</h3>
-        <p class="desc">The LGU of Tampilisan's official public website, which I built on WordPress using DICT's Government Web Template (GWT), submitted to DICT, and now maintain via the cPanel access DICT provides on their free government web hosting. I did this outside my formal job description, since the LGU has no dedicated MIS office. Covers the transparency and public-disclosure pages every LGU site is expected to carry (Transparency Seal, Freedom of Information, GAD Corner), plus announcements, tourism content, and office contact details.</p>
+        <p class="desc">The LGU of Tampilisan's official public website, which I built on WordPress using DICT's Government Web Template (GWT), submitted to DICT, and now maintain via the cPanel access DICT provides on their free government web hosting. Covers the transparency and public-disclosure pages every LGU site is expected to carry (Transparency Seal, Freedom of Information, GAD Corner), plus announcements, tourism content, and office contact details.</p>
         <ul class="features">
           <li>Built on the DICT Government Web Template for WordPress, hosted free via DICT's government web hosting program (cPanel access)</li>
           <li>Transparency Seal, Freedom of Information, and GAD Corner pages kept current</li>
@@ -535,7 +535,7 @@
     <h2>Contact</h2>
     <p class="section-lead">Questions, feedback, or freelance inquiries are welcome at <a href="mailto:pepooh696@gmail.com">pepooh696@gmail.com</a> or on <a href="https://www.linkedin.com/in/johnritz-albelda-8b64b3118/" target="_blank" rel="noopener">LinkedIn</a>.</p>
     <div class="btn-row">
-      <a class="btn btn-primary" href="assets/Johnritz_Albelda_CV.pdf?v=20261127b" target="_blank" rel="noopener">Download CV (PDF)</a>
+      <a class="btn btn-primary" href="assets/Johnritz_Albelda_CV.pdf?v=20261127c" target="_blank" rel="noopener">Download CV (PDF)</a>
     </div>
   </section>
 
